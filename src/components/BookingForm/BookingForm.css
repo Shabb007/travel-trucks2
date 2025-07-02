@@ -1,0 +1,47 @@
+.booking-form {
+  padding: 44px 57px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.booking-form h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0 0 8px 0;
+}
+
+.booking-subtitle {
+  color: #475467;
+  margin: 0 0 24px 0;
+}
+
+.success-message {
+  padding: 12px;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.success-message p {
+  margin: 0;
+  color: #155724;
+  font-weight: 500;
+}
+
+.booking-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 18px;
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #101828;
+}

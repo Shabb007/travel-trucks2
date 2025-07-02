@@ -1,0 +1,112 @@
+.catalog-page {
+  padding: 50px 0;
+  min-height: calc(100vh - 100px);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 64px;
+}
+
+.catalog-content {
+  min-height: 400px;
+}
+
+.campers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #475467;
+}
+
+.no-results h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #101828;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.load-more-btn {
+  padding: 16px 56px;
+  background: transparent;
+  color: #101828;
+  border: 1px solid #dadde1;
+  border-radius: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-more-btn:hover:not(:disabled) {
+  border-color: #e44848;
+  color: #e44848;
+}
+
+.load-more-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.error-message h2 {
+  color: #dc2626;
+  margin-bottom: 16px;
+}
+
+.error-message p {
+  color: #475467;
+  margin-bottom: 24px;
+}
+
+.retry-btn {
+  padding: 12px 24px;
+  background: #e44848;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.retry-btn:hover {
+  background: #d63384;
+}
+
+@media (max-width: 1024px) {
+  .catalog-layout {
+    grid-template-columns: 300px 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}

@@ -1,0 +1,167 @@
+.filter-sidebar {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filter-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6c717b;
+}
+
+.location-input {
+  position: relative;
+}
+
+.location-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #101828;
+  font-size: 20px;
+}
+
+.location-field {
+  width: 100%;
+  padding: 18px 18px 18px 48px;
+  border: none;
+  border-radius: 12px;
+  background: #f7f7f7;
+  font-size: 16px;
+  color: #101828;
+}
+
+.location-field::placeholder {
+  color: #6c717b;
+}
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.filter-group:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.group-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.equipment-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 17px;
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: #101828;
+}
+
+.equipment-btn:hover {
+  border-color: #e44848;
+}
+
+.equipment-btn.active {
+  border-color: #e44848;
+  background: #fff2f2;
+}
+
+.equipment-btn svg {
+  font-size: 32px;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.vehicle-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 17px;
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: #101828;
+}
+
+.vehicle-btn:hover {
+  border-color: #e44848;
+}
+
+.vehicle-btn.active {
+  border-color: #e44848;
+  background: #fff2f2;
+}
+
+.vehicle-icon {
+  font-size: 32px;
+}
+
+.search-btn {
+  padding: 16px;
+  background: #e44848;
+  color: #fff;
+  border: none;
+  border-radius: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #d63384;
+}
+
+@media (max-width: 768px) {
+  .filter-sidebar {
+    width: 100%;
+  }
+
+  .equipment-grid,
+  .vehicle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
