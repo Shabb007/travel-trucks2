@@ -1,18 +1,22 @@
-import { Link } from "react-router-dom";
-import "./HomePage.css";
+import React from "react";
+import { Navigate, useNavigate } from "react-router-dom";
+import styles from "./HomePage.module.css";
+import "modern-normalize";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
-    <div className="home-page">
-      <div className="hero-section">
-        <div className="hero-content">
-          <h1>Campers of your dreams</h1>
-          <p>You can find everything you want in our catalog</p>
-          <Link to="/catalog" className="cta-button">
-            View Now
-          </Link>
-        </div>
-      </div>
+    <div className={styles.hero}>
+      <h1 className={styles.heroH1}>Campers of your dreams</h1>
+      <p className={styles.heroText}>
+        You can find everything you want in our catalog.
+      </p>
+      <button
+        className={styles.heroButton}
+        onClick={() => navigate("/catalog")}
+      >
+        View now
+      </button>
     </div>
   );
 };
