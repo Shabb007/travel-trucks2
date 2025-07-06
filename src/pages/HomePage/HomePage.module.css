@@ -1,10 +1,9 @@
 .hero {
-  /* text-align: center; */
   padding: 260px 64px;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    url(../../images/HeroPic-min.png) lightgray 0px -192.086px / 100% 138.099%
-      no-repeat;
+    url("../../images/hero_image-min.png") lightgray 0px -192.086px / 100%
+      138.099% no-repeat;
   background-size: cover;
   background-position: center;
   height: 696px;
@@ -14,9 +13,13 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
-    background-image: url("../../images/HeroPic-min.png") lightgray
+    background-image: url("../../images/hero_image_2x-min.png") lightgray
       0px -192.086px / 100% 138.099% no-repeat;
   }
+}
+
+.hero_wrapper {
+  max-width: 571px;
 }
 
 .heroH1 {
