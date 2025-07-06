@@ -1,0 +1,82 @@
+.filtersContainer {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.filterEquipmentContainer {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.filtersText {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  color: var(--Text, #475467);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  display: flex;
+}
+
+.filterList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.filterItem {
+  width: 112px;
+  height: 96px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid var(--Gray-light, #dadde1);
+  mix-blend-mode: multiply;
+}
+
+.filterItem:focus,
+.filterItem:hover {
+  border: 1px solid var(--Button, #e44848);
+}
+
+.filterItem.active {
+  border: 1px solid var(--Button, #e44848);
+}
+
+.filterCardText {
+  color: var(--Main, #101828);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.08px;
+}
+
+.filtersButton {
+  display: flex;
+  width: 166px;
+  padding: 16px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 200px;
+  background: var(--Button, #e44848);
+  color: white;
+  border: none;
+}
+
+.filtersButton:hover {
+  background: #d84343;
+}

@@ -1,0 +1,28 @@
+.headerdiv {
+  padding: 24px 64px;
+  display: flex;
+  justify-items: baseline;
+  align-items: center;
+  border-bottom: 1px solid var(--Badges, #f2f4f7);
+  background: var(--Inputs, #f7f7f7);
+}
+
+.headernav {
+  display: flex;
+  gap: 20px;
+  justify-items: baseline;
+  align-items: center;
+}
+
+.headerlogo {
+  margin-right: 450px;
+}
+
+.active {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}

@@ -1,0 +1,49 @@
+.searchbar {
+  display: flex;
+  width: 360px;
+  height: 56px;
+  padding: 18px 218px 18px 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: var(--Inputs, #f7f7f7);
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+.searchbar:focus,
+.searchbar:hover {
+  outline: none; /* Removes default browser outline */
+}
+
+.searchLabel {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--Gray, #6c717b);
+  /* Body */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.searchInput:focus {
+  border: none;
+  color: black;
+}
+
+.searchContainer {
+  position: relative;
+  display: inline-block;
+}
+.mapIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: gray;
+  cursor: pointer;
+}

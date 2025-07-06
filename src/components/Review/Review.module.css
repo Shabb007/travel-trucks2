@@ -1,0 +1,30 @@
+.reviewContainer {
+  display: flex;
+  width: 631px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.iconAndStars {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: var(--Badges, #f2f4f7);
+  color: var(--Button, #e44848);
+  /* H2 */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}

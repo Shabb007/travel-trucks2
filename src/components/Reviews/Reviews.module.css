@@ -1,0 +1,68 @@
+.reviewsContainer {
+  display: flex;
+  width: 631px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  padding-top: 12px;
+}
+
+/* Dont forget to delete */
+
+.categories {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px;
+  width: 524px;
+  justify-content: left;
+  align-items: center;
+}
+
+.iconBox {
+  display: flex;
+  padding: 12px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: var(--Badges, #f2f4f7);
+  mix-blend-mode: multiply;
+}
+
+.iconBoxText {
+  color: var(--Main, #101828);
+  text-align: center;
+  /* Body 2 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.reviewsDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.vehicleText {
+  color: var(--Main, #101828);
+  /* H3 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviewsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
