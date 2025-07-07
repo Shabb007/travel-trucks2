@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import styles from "./CatalogPage.module.css";
 import Location from "../../components/Location/Location";
 import Filters from "../../components/Filters/Filters";
