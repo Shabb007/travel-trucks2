@@ -28,7 +28,7 @@ const BookForm = () => {
   return (
     <div className={style.formContainer}>
       <div className={style.formHead}>
-        <h3>Book your campervan now</h3>
+        <h3>Book your Campervan now</h3>
         <p className={style.formHeadText}>
           Stay connected! We are always ready to help you.
         </p>
@@ -37,7 +37,6 @@ const BookForm = () => {
         initialValues={initialValues}
         onSubmit={handleSubmit}
         className={style.form}
-        // validationSchema={FeedbackSchema}
       >
         <Form className={style.feedbackFormItem}>
           <div>
