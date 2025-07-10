@@ -36,18 +36,18 @@ const TruckCard = ({
 
   const handleAddFavorite = (id) => {
     dispatch(addFavorite(id));
-    console.log("id", id);
   };
 
   const handleDeleteFavorite = (id) => {
     dispatch(deleteFavorite(id));
-    console.log("id", id);
   };
 
   const favoriteList = useSelector(selectFavoriteList);
   let descriptionCut = "";
+  let showEllipsis = false;
   if (description) {
     descriptionCut = description.slice(0, 61);
+    showEllipsis = description.length > 61;
   }
 
   const handleClick = () => {
@@ -57,7 +57,7 @@ const TruckCard = ({
 
   return (
     <div className={css.container}>
-      <img className={css.imageItem} src={gallery[0].original} alt="" />
+      <img className={css.imageItem} src={gallery?.[0]?.original || "/icons8-truck-96.png"} alt="Truck image" />
 
       <div className={css.cardDescription}>
         <div className={css.cardHead}>
@@ -66,13 +66,13 @@ const TruckCard = ({
             <div className={css.firstLineEnd}>
               <h2 className={css.firstLineText}>€{price}.00</h2>
               {favoriteList.includes(id) ? (
-                <button type="submit" onClick={() => handleDeleteFavorite(id)}>
+                <button type="button" aria-label="Remove from favorites" onClick={() => handleDeleteFavorite(id)}>
                   <svg className={css.heartStyleActive} width="25" height="24">
                     <use href={"/icons.svg#heart"}></use>
                   </svg>
                 </button>
               ) : (
-                <button type="submit" onClick={() => handleAddFavorite(id)}>
+                <button type="button" aria-label="Add to favorites" onClick={() => handleAddFavorite(id)}>
                   <svg className={css.heartStyle} width="25" height="24">
                     <use href={"/icons.svg#heart"}></use>
                   </svg>
@@ -87,9 +87,8 @@ const TruckCard = ({
               </svg>
               <p className={css.reviewText}>
                 <Link className={css.reviewLink} to={`${id}/reviews`}>
-                  {rating}({reviews.length} reviews
+                  {rating}({reviews.length} reviews)
                 </Link>
-                )
               </p>
             </div>
 
@@ -101,7 +100,7 @@ const TruckCard = ({
             </div>
           </div>
         </div>
-        <p className={css.descriptionText}>{descriptionCut}...</p>
+        <p className={css.descriptionText}>{descriptionCut}{showEllipsis && "..."}</p>
         <div className={css.categories}>
           {transmission && (
             <div className={css.iconBox}>
@@ -172,7 +171,7 @@ const TruckCard = ({
             </div>
           )}
         </div>
-        <button className={css.cardButton} onClick={handleClick}>
+        <button className={css.cardButton} aria-label="Show more details" onClick={handleClick}>
           Show more
         </button>
       </div>

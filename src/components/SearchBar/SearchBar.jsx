@@ -2,11 +2,7 @@ import React from "react";
 import { useId } from "react";
 import css from "./SearchBar.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  addFilter,
-  addLocation,
-  selectLocationFilter,
-} from "../../redux/filtersSlice";
+import { addLocation, selectLocationFilter } from "../../redux/filtersSlice";
 
 const SearchBar = () => {
   const searchId = useId();
